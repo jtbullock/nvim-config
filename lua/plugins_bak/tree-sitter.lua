@@ -6,9 +6,9 @@ return {
 		config.setup({
 			ensure_installed = {"lua", "javascript"},
 			highlight = { enable = true },
-			indent = { enable = false }
+			indent = { enable = true }
 		})
 
-		vim.keymap.set('n', '<C-e>', ':Neotree filesystem reveal left<CR>', {})
+		vim.keymap.set('n', '<leader>n', ':Neotree filesystem reveal left<CR>', {})
 	end
 }
